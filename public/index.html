@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>我的网页</title>
+    <link rel='stylesheet' href='./stylesheets/style.css'/>
+    <link rel="shortcut icon" href="images/haha.jpg">
+</head>
+<body>
+        <DD><h1><a href="http://www.baidu.com/" target="_blank"><img name="jump" src="images/J.gif" alt="i"></a>&emsp;&emsp;&emsp;&emsp;
+            <a href="https://github.com/AeolusZane/" target="_blank">我的GitHub主页</a>&emsp;&emsp;&emsp;&emsp;
+            <a href="http://www.baidu.com/" target="_blank"><img name="jump2" src="images/J.gif" alt="i"></a></h1></DD>
+          <h4>今天是2018年7月10日，今天是个重要的日子，我在今天完成了我的第一个网页的制作，这是我制作的一个简单的网页，之后会添加更多的内容。</h4>
+          <h2 style="text-align: center;">pp聊天室</h2>
+          <div style="text-align: center;"><button id="dianwo"style="border:0;background:0;"><img src="images/ex1.png" alt="i" style="margin: 0 auto;"></button></div>
+    <div id='content'>
+        <div id='room'></div>
+        <div id='room-list'></div>
+        <div id='messages'></div>
+
+    <form id='send-form'>
+        <input id='send-message'/>
+        <input id='send-button' type='submit' value='发送'/>
+
+        <div id='help'>
+            聊天命令:
+            <ul>
+                <li>更改昵称: <code>/a [新昵称]</code></li>
+                <li>加入、创建房间: <code>/b [房间名]</code></li>
+        </div>
+    </form>
+    </div>
+    <div style="text-align: center;">
+    <img id='H' width=‘170’ height='170' src="images/xiamu.gif" alt="">&emsp;&emsp;&emsp;&emsp;
+    <img id='h' width=‘170’ height='170' src="images/xiamu2.gif" alt=""></div>
+    <p><div style="text-align: center;"><button id='b2' style="font-size:25px;">点击写留言</button></div></p>
+    <p id='p0' style="text-align: center;"></p>
+    <script src="javascripts/main.js"></script>
+    <script src='./socket.io/socket.io.js' type='text/javascript'></script>
+    <script src='http://code.jquery.com/jquery-1.8.0.min.js' type='text/javascript'></script>
+    <script src='./javascripts/chat.js' type='text/javascript'></script>
+    <script src='./javascripts/chat_ui.js' type='text/javascript'></script>
+    <script>
+        var imgs=document.getElementsByName('jump')[0];
+        imgs.onmouseover=function(){
+            imgs.src="images/J.jpg";
+             imgs.onmouseout=function(){
+               imgs.src="images/J.gif";
+             };
+        };
+        var imgs2=document.getElementsByName('jump2')[0];
+        imgs2.onmouseover=function(){
+            imgs2.src="images/J.jpg";
+             imgs2.onmouseout=function(){
+               imgs2.src="images/J.gif";
+             };
+        };
+    </script>
+</body>
+</html>

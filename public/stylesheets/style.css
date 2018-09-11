@@ -1,0 +1,86 @@
+body{
+  width: 900px;
+  margin: 50px auto;
+  background-color:rgb(224, 224, 224);
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+  filter:alpha(opacity=70);  
+  -moz-opacity:0.90;  
+  -khtml-opacity: 0.90;  
+  opacity: 0.90; 
+}
+a{
+  color: #FF7575;
+  text-decoration:none;
+  text-shadow: 4px 4px 1px #D0D0D0;
+}
+a:hover{
+  color: #FF2D2D;
+}
+html {
+  font-size: 20px; 
+  font-family: 'Î¢ÈíÑÅºÚ', monospace;
+  background-image:url("../images/bz4.jpg");
+  background-size:100%;
+}
+p{
+font-weight:bold;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#zhuan{
+  color: #FF2D2D;
+  font-size: 25px;
+}
+#ss:hover{
+  animation-name: rotate;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
+#content{
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#room{
+  background-color: #ddd;
+  margin-bottom:1em;
+}
+#messages{
+  width:690px;
+  height:300px;
+  overflow:auto;
+  background-color:#eee;
+  margin-bottom:1em;
+  margin-right:10px;
+}
+#room-list{
+  float:right;
+  width:100px;
+  height:300px;
+  overflow:auto;
+}
+#room-list div{
+  border-bottom:1px solid #eee;
+}
+#room-list div:hover{
+  background-color:#ddd;
+}
+#send-message{
+  width:700px;
+  margin-bottom:1em;
+  margin-right:1em;
+}
+
+#help{
+  font-family: 'Î¢ÈíÑÅºÚ', monospace;
+  font-size:10px;
+}
